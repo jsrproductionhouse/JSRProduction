@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* Reset and Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+/* Tranding (Gallery) Section */
+#tranding {
+  padding: 2rem 0;
+  background-image: url('Public/Images/TEAM1.png');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+}
+
+.tranding-slider {
+  height: 30rem; /* Further Reduced */
+  position: relative;
+}
+
+.tranding-slide {
+  max-width: 20rem; /* Further Reduced */
+  height: 25rem;  /* Further Reduced */
+  position: relative;
+}
+
+.tranding-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .tranding-slider {
+    height: 35rem;
+  }
+  .tranding-slide {
+    max-width: 25rem;
+    height: 30rem;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+  .tranding-slider {
+    height: 40rem;
+  }
+  .tranding-slide {
+    max-width: 30rem;
+    height: 35rem;
+  }
+}
+
+/* Very Large Screens */
+@media (min-width: 1921px) {
+  #tranding {
+    padding: 3rem 0;
+  }
+  .tranding-slider {
+    height: 45rem;
+  }
+  .tranding-slide {
+    max-width: 35rem;
+    height: 40rem;
+  }
+  .section-heading {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+}
