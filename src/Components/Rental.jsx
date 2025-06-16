@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
+import { BACKEND_URL } from "../../config";
 Aos.init({
   duration: 1200,
 });
@@ -38,9 +39,7 @@ const Rental = () => {
 
   async function get() {
     try {
-      const { data } = await axios.get(
-        "https://jsr-backend-x7rr.onrender.com/Rentals"
-      );
+      const { data } = await axios.get(`${BACKEND_URL}/Rentals`);
       // console.log("data[0]",data[0]);
       setRentals(data);
     } catch (e) {
@@ -52,8 +51,6 @@ const Rental = () => {
   }, []);
   return (
     <>
-      
-
       <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         {/* <h1 className="text-2xl lg:text-6xl text-start bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
           Professional Cameras
@@ -68,11 +65,12 @@ const Rental = () => {
               >
                 {item?.heading}
               </h3>
-              <p className="font2 opacity-40 pb-10" data-aos="fade-up">{item?.content}</p>
+              <p className="font2 opacity-40 pb-10" data-aos="fade-up">
+                {item?.content}
+              </p>
             </>
           );
         })}
-        
       </div>
     </>
   );

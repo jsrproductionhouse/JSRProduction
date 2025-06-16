@@ -12,6 +12,7 @@ import "../future.css";
 import { Autoplay, Pagination } from "swiper";
 import { useEffect, useState } from "react";
 import SkeletonCard from "./SkeletonCard";
+import { BACKEND_URL } from "../../config";
 
 const UpcomingProjects = () => {
   const [array, setArray] = useState([]);
@@ -19,9 +20,7 @@ const UpcomingProjects = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch(
-        "https://jsr-backend-x7rr.onrender.com/Upcoming"
-      );
+      const response = await fetch(`${BACKEND_URL}/Upcoming`);
       const data = await response.json();
       // console.log(data, "=>>>");
       setLoading(false);
@@ -36,7 +35,7 @@ const UpcomingProjects = () => {
   }, []);
 
   // const UP = [
- 
+
   //   {
   //     title: "DEEPER (Music Video)",
   //     img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740466/fwmlhebuiftcq9mtqzig.jpg",
@@ -131,20 +130,21 @@ const UpcomingProjects = () => {
         className="mySwiper p-2"
       >
         {
-        // loading
-        //   ? [1, 2, 3, 4].map((index) => (
-        //       <SwiperSlide key={index}>
-        //         <SkeletonCard />
-        //       </SwiperSlide>
-        //     ))
-        //   : 
+          // loading
+          //   ? [1, 2, 3, 4].map((index) => (
+          //       <SwiperSlide key={index}>
+          //         <SkeletonCard />
+          //       </SwiperSlide>
+          //     ))
+          //   :
           array.map((item, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <Card data={item} />
-                </SwiperSlide>
-              );
-            })}
+            return (
+              <SwiperSlide key={index}>
+                <Card data={item} />
+              </SwiperSlide>
+            );
+          })
+        }
       </Swiper>
       {/* <>
         {array.map((item, index) => {

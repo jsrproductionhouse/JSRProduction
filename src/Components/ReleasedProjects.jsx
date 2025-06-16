@@ -13,6 +13,7 @@ import { Pagination, Autoplay } from "swiper";
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import SkeletonCard from "./SkeletonCard";
+import { BACKEND_URL } from "../../config";
 
 const ReleasedProjects = () => {
   const [array, setArray] = useState([]);
@@ -20,9 +21,7 @@ const ReleasedProjects = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch(
-        "https://jsr-backend-x7rr.onrender.com/RProject"
-      );
+      const response = await fetch(`${BACKEND_URL}/RProject`);
       const data = await response.json();
       // console.log(data, "=>>>");
       setLoading(false);

@@ -2,13 +2,12 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { quality } from "@cloudinary/url-gen/actions/delivery";
 import { auto } from "@cloudinary/url-gen/qualifiers/quality";
+import { BACKEND_URL } from "../../config";
 const OurChannel = () => {
   var [para, setPara] = useState([]);
   async function get() {
     try {
-      const { data } = await axios.get(
-        "https://jsr-backend-x7rr.onrender.com/OurChannel"
-      );
+      const { data } = await axios.get(`${BACKEND_URL}/OurChannel`);
       // console.log(data.para);
       setPara(data.para);
     } catch (e) {

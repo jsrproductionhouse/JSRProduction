@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { BACKEND_URL } from "../../config";
 
 const About = () => {
   const [para, setPara] = useState([]);
   async function getabout() {
     try {
-      const { data } = await axios.get(
-        "https://jsr-backend-x7rr.onrender.com/AParagraph/"
-      );
+      const { data } = await axios.get(`${BACKEND_URL}/AParagraph/`);
       // console.log(data[0].line);
       setPara(data[0].line);
     } catch (e) {
@@ -42,8 +41,10 @@ const About = () => {
 
         {/* for mobile */}
         <div className="xl:hidden font2  text-justify px-5 pb-5 text-gray-900">
-        {para.map((paragraph, index) => (
-            <p key={index} className="mb-2">{paragraph}</p>
+          {para.map((paragraph, index) => (
+            <p key={index} className="mb-2">
+              {paragraph}
+            </p>
           ))}
         </div>
       </div>

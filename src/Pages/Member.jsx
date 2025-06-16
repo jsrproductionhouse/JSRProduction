@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 // import Service from "../Components/Service";
 import FooterNav from "../Components/FooterNav";
@@ -17,6 +17,7 @@ import "../released.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 import axios from "axios";
+import { BACKEND_URL } from "../../config";
 
 const Member = () => {
   const [banner, setBanner] = useState({});
@@ -25,7 +26,7 @@ const Member = () => {
   }, []);
   async function get() {
     try {
-      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/members");
+      const { data } = await axios.get(`${BACKEND_URL}/Banner/members`);
       console.log(data);
       setBanner(data.img);
     } catch (e) {
@@ -37,8 +38,15 @@ const Member = () => {
   }, []);
   return (
     <>
-      <div className="fixed top-[320px] lg:top-[260px] right-0 h-72 w-10 items-center flex flex-col gap-10 justify-center bg-gray-600 opacity-75 z-50 rounded-tl-md rounded-bl-md    "  style={{zIndex:"9999"}}>
-        <a href="https://www.facebook.com/JSRProductionhouse" target="_blank">
+      <div
+        className="fixed top-[320px] lg:top-[260px] right-0 h-72 w-10 items-center flex flex-col gap-10 justify-center bg-gray-600 opacity-75 z-50 rounded-tl-md rounded-bl-md    "
+        style={{ zIndex: "9999" }}
+      >
+        <a
+          href="https://www.facebook.com/JSRProductionhouse"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
             alt=""
@@ -48,6 +56,7 @@ const Member = () => {
         <a
           href="https://www.instagram.com/jsrproductionhouse/?igshid=YmMyMTA2M2Y%3D"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
@@ -55,7 +64,11 @@ const Member = () => {
             className="w-7 h-7 hover:scale-125  duration-200"
           />
         </a>
-        <a href="https://www.youtube.com/@jsrproductionhouse9127" target="_blank">
+        <a
+          href="https://www.youtube.com/@jsrproductionhouse9127"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
             alt=""
@@ -64,7 +77,13 @@ const Member = () => {
         </a>
         <a href="https://twitter.com/house_jsr?lang=en">
           {/* <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" /> */}
-          <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            viewBox="0 0 512 512"
+          >
+            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+          </svg>
         </a>
       </div>
       <div className="">
@@ -95,8 +114,7 @@ const Member = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper hidden lg:flex"
         >
-              
-          <SwiperSlide >
+          <SwiperSlide>
             <div className=" flex justify-center w-full">
               <img
                 src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698741627/nohw0npkhlungrjrharo.png"
@@ -108,10 +126,9 @@ const Member = () => {
           </SwiperSlide>
         </Swiper>
         <div className="flex lg:hidden justify-center w-full">
-         
-
-
-  <img src= "https://res.cloudinary.com/dsea9eyps/image/upload/v1698741627/nohw0npkhlungrjrharo.png" alt="Banner Image" 
+          <img
+            src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698741627/nohw0npkhlungrjrharo.png"
+            alt="Banner Image"
             className="h-[400px] lg:h-[500px] w-full object-cover"
           />
         </div>
