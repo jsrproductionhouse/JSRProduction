@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
- import { Cloudinary } from '@cloudinary/url-gen';
- import { AdvancedVideo } from '@cloudinary/react';
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedVideo } from "@cloudinary/react";
 
 // Import Swiper styles
 // import "swiper/css";
@@ -9,11 +9,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { useEffect, useState } from "react";
 // import "../released.css";
 
-
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Hero = () => {
-   const cld = new Cloudinary({ cloud: { cloudName: 'dsea9eyps' } });
+  const cld = new Cloudinary({ cloud: { cloudName: "dsea9eyps" } });
   // const [array, setArray] = useState([]);
   // useEffect(() => {
   //   const fetchProducts = async () => {
@@ -40,30 +39,22 @@ const Hero = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-    >
-      {/* {
-      array.map((item, index)=>{
-        return( */}
-      <SwiperSlide>
-         <AdvancedVideo
-  controls={false}
-  className=" -mt-48  -mb-40 sm:mb-0 sm:mt-0 sm:object-cover w-screen h-[70vh]"
-  autoPlay
-  muted
-  loop
-  cldVid={cld.video('ji6qdcwev4ptfvxdzhkl').quality('auto')}
-/> 
-
-{/* <video autoPlay controls className="w-screen h-[70vh]" >
-  <source src="JSR.mp4" type="video/mp4"></source>
-</video> */}
-      </SwiperSlide>
-        {/* )
-      }
-      )} */}
-     
-    </Swiper>
+        className="w-screen h-[calc(100vh-89px)]" // Ensure Swiper fills screen
+      >
+        <SwiperSlide className="w-full h-full">
+          <div className="relative w-full h-full">
+            <AdvancedVideo
+              cldVid={cld.video("ji6qdcwev4ptfvxdzhkl").quality("auto")}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </>
   );
 };

@@ -95,7 +95,7 @@ const Member = () => {
           />
           <div className="flex justify-center items-center">
             <h1 className="text-4xl lg:text-7xl text-white tracking-wider absolute top-44 lg:top-48 xl:top-52 2xl:top-72  ">
-              TEAM
+              FOUNDERS
             </h1>
           </div>
         </div>

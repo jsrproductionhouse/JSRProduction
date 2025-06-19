@@ -57,7 +57,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
 
             <Link to="/member">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
-                TEAM
+                FOUNDERS
               </li>
             </Link>
             <Link to="/rentals">
@@ -71,11 +71,14 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                 CONTACT
               </li>
             </Link>
-            <Link to="https://drive.google.com/file/d/1NHCBX1FzQvQftfnnkNjU_FWEXv4PCHs4/view" target= "_blank">
-                <li className="hover:scale-125 hover:opacity-50 duration-200">
-                  BROCHURE
-                </li>
-              </Link>
+            <Link
+              to="https://drive.google.com/file/d/1NHCBX1FzQvQftfnnkNjU_FWEXv4PCHs4/view"
+              target="_blank"
+            >
+              <li className="hover:scale-125 hover:opacity-50 duration-200">
+                BROCHURE
+              </li>
+            </Link>
           </ul>
         </div>
       )}
@@ -108,7 +111,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               </Link>
               <Link to="/member">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
-                  TEAM
+                  FOUNDERS
                 </li>
               </Link>
 
@@ -117,7 +120,10 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                   RENTALS
                 </li>
               </Link>
-              <Link to="https://drive.google.com/file/d/1NHCBX1FzQvQftfnnkNjU_FWEXv4PCHs4/view" target= "_blank">
+              <Link
+                to="https://drive.google.com/file/d/1NHCBX1FzQvQftfnnkNjU_FWEXv4PCHs4/view"
+                target="_blank"
+              >
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
                   BROCHURE
                 </li>
@@ -158,6 +164,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                   <a
                     href="https://www.instagram.com/jsrproductionhouse/?igshid=YmMyMTA2M2Y%3D"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <BsInstagram className="w-8 h-8" />
@@ -166,6 +173,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                   <a
                     href="https://www.instagram.com/jsrproductionhouse/?igshid=YmMyMTA2M2Y%3D"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button className=" font2 w-44 bg-blue-400 text-xs flex justify-center items-center h-7 rounded-md gap-2">
                       <BsInstagram />
