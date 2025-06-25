@@ -23,7 +23,10 @@ const Home = () => {
     <div className="w-full h-full">
       {/* ✅ SEO Helmet */}
       <Helmet>
-        <title>JSR Production House | Dehradun Film Production & Rental</title>
+        <title>
+          JSR Production House | Best Film Production & Equipment Rental in
+          Dehradun, Uttarakhand
+        </title>
         <meta
           name="description"
           content="JSR Production House is Dehradun’s leading video production and film equipment rental studio. Ads, music videos, documentaries & more — professionally crafted."
@@ -31,7 +34,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="JSR Production House | Dehradun Film Production & Rental"
+          content="JSR Production House | Best Film Production & Equipment Rental in Dehradun, Uttarakhand"
         />
         <meta
           property="og:description"
