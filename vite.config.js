@@ -1,7 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import prerender from "vite-plugin-prerender";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    prerender({
+      staticDir: "dist",
+      routes: ["/"], // Add all routes you want to pre-render
+    }),
+  ],
+});
