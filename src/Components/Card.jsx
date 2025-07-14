@@ -15,7 +15,7 @@ import speed from "../assets/speed.jpg";
 import baby from "../assets/baby.jpg";
 import checkMate from "../assets/check-mate.jpg";
 import rehneDo from "../assets/rehne-do.jpg";
-import badMundey from "../assets/bad-mundey.jpg";
+import badMundey from "../assets/badMundey.jpg";
 import galat from "../assets/galat.jpg";
 import mero from "../assets/mero-dil-aaygyi.jpg";
 import kuyedi from "../assets/kuyedi.jpg";
