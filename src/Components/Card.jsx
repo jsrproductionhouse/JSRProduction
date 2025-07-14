@@ -16,7 +16,7 @@ import baby from "../assets/baby.jpg";
 import checkMate from "../assets/check-mate.jpg";
 import rehneDo from "../assets/rehne-do.jpg";
 import badMundey from "../assets/badMundey.jpg";
-import galat from "../assets/galat.jpg";
+import galat from "../assets/galatKam.jpg";
 import mero from "../assets/mero-dil-aaygyi.jpg";
 import kuyedi from "../assets/kuyedi.jpg";
 import tuna from "../assets/tu-na-sahi.jpg";
