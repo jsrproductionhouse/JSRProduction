@@ -1,173 +1,67 @@
-import React, { useEffect, useState } from "react";
-// import "../Gallery/Gallery.css";
+import React from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
-import { BACKEND_URL } from "../../../config";
 
-const Gallery = (props) => {
-  const [gallery, setGallery] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await fetch(`${BACKEND_URL}/Gallery`);
-      const data = await response.json();
-      // console.log(data, " gallery =>>>");
-      setGallery(data);
-      setLoading(false);
-    };
-
-    fetchProducts();
-  }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+const Gallery = () => {
+  const images = [
+    "./gallery1.jpg",
+    "./gallery2.jpg",
+    "./gallery3.jpg",
+    "./gallery4.jpg",
+    "./gallery5.jpg",
+    "./gallery6.jpg",
+    "./gallery7.jpg",
+    "./gallery8.jpg",
+    "./gallery9.jpg",
+    "./gallery10.jpg",
+    "./gallery11.jpg",
+    "./gallery12.jpg",
+    "./gallery13.jpg",
+    "./gallery14.jpg",
+  ];
 
   return (
     <>
-      <h1 className="text-center pt-20 -mt-5 lg:pt-28 text-4xl lg:text-6xl tracking-[2px]  lg:tracking-[6px] pb-10 lg:pb-20">
+      <h1 className="text-center pt-20 -mt-5 lg:pt-28 text-4xl lg:text-6xl tracking-[2px] lg:tracking-[6px] pb-10 lg:pb-20">
         GALLERY
       </h1>
+
       <div
-        className="bg-black  h-[80vh] w-screen flex flex-col justify-center   gap-y-2 p-5 -mt-6  lg:-mt-16  scrollbar-hide   overflow-x-scroll "
+        className="bg-black h-[80vh] w-screen flex flex-col justify-center gap-y-2 p-5 -mt-6 lg:-mt-16 overflow-x-scroll scrollbar-hide"
         style={{
-          backgroundImage: 'url("Public/Images/TEAM1.png")',
+          backgroundImage: 'url("/Images/TEAM1.png")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <PhotoProvider>
-          <div className=" flex  gap-3 w-[1800px]  h-[250px]        ">
-            <div className="  ">
-              <PhotoView src={gallery?.img1}>
+          <div className="flex gap-3 w-[1800px] h-[250px]">
+            {images.slice(0, 7).map((img, index) => (
+              <PhotoView src={img} key={index}>
                 <img
-                  src={gallery?.img1}
-                  className="trans h-[100%] w-[200px] rounded-md   border-2 border-white   "
-                  alt="img1"
-                ></img>
+                  src={img}
+                  alt={`img-${index + 1}`}
+                  className={`trans h-full ${
+                    index === 2 || index === 5 ? "w-[400px]" : "w-[200px]"
+                  } rounded-md border-2 border-white`}
+                />
               </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img3}>
-                <img
-                  src={gallery?.img3}
-                  className=" trans h-[100%]  w-[200px] rounded-md  border-2 border-white  "
-                  alt="img3"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img8}>
-                <img
-                  src={gallery?.img8}
-                  className=" trans h-[100%] w-[400px]  rounded-md border-2 border-white  "
-                  alt="img5"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img7}>
-                <img
-                  src={gallery?.img7}
-                  className=" trans h-[100%] w-[200px] rounded-md  border-2 border-white  "
-                  alt="img7"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img9}>
-                <img
-                  src={gallery?.img9}
-                  className=" trans h-[100%] w-[200px] rounded-md   border-2 border-white  "
-                  alt="img9"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img11}>
-                <img
-                  src={gallery?.img11}
-                  className=" trans h-[100%] w-[400px] rounded-md  border-2 border-white  "
-                  alt="img11"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img13}>
-                <img
-                  src={gallery?.img13}
-                  className=" trans h-[100%] w-[200px] rounded-md   border-2 border-white  "
-                  alt="img13"
-                ></img>
-              </PhotoView>
-            </div>
+            ))}
           </div>
-          <div className="flex  gap-3  h-[250px] w-[1800px] mt-3      ">
-            <div className="   ">
-              <PhotoView src={gallery?.img2}>
+
+          <div className="flex gap-3 h-[250px] w-[1800px] mt-3">
+            {images.slice(7).map((img, index) => (
+              <PhotoView src={img} key={index + 7}>
                 <img
-                  src={gallery?.img2}
-                  className=" trans h-[100%] w-[413px] rounded-md   border-2 border-white  "
-                  alt="img13"
-                ></img>
+                  src={img}
+                  alt={`img-${index + 8}`}
+                  className={`trans h-full ${
+                    index === 0 || index === 4 ? "w-[413px]" : "w-[200px]"
+                  } rounded-md border-2 border-white`}
+                />
               </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img4}>
-                <img
-                  src={gallery?.img4}
-                  className=" trans h-[100%] w-[195px] rounded-md   border-2 border-white  "
-                  alt="img13"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img6}>
-                <img
-                  src={gallery?.img6}
-                  className=" trans h-[100%] w-[195px] rounded-md   border-2 border-white  "
-                  alt="img13"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img5}>
-                <img
-                  src={gallery?.img5}
-                  className=" trans h-[100%] w-[200px] rounded-md    border-2 border-white  "
-                  alt="img13"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img12}>
-                <img
-                  src={gallery?.img12}
-                  className=" trans h-[100%] w-[400px] rounded-md   border-2 border-white  "
-                  alt="img13"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img10}>
-                <img
-                  src={gallery?.img10}
-                  className=" trans h-[100%] w-[200px] rounded-md   border-2 border-white  "
-                  alt="img13"
-                ></img>
-              </PhotoView>
-            </div>
-            <div className="">
-              <PhotoView src={gallery?.img14}>
-                <img
-                  src={gallery?.img14}
-                  className=" trans h-[100%] w-[200px] rounded-md   border-2 border-white  "
-                  alt="img13"
-                ></img>
-              </PhotoView>
-            </div>
+            ))}
           </div>
         </PhotoProvider>
       </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -10,77 +10,66 @@ import "swiper/swiper-bundle.css";
 import "./Gallery2.css";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
-import { BACKEND_URL } from "../../../config";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
 const Gallery2 = () => {
-  const [gallery, setGallery] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch(`${BACKEND_URL}/Gallery`);
-        if (!response.ok) {
-          throw new Error("Failed to fetch.");
-        }
-        const data = await response.json();
-
-        setGallery(Object.values(data).slice(1));
-        setIsLoading(false);
-      } catch (error) {
-        console.error("There was an error fetching the data", error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  const images = [
+    "./gallery1.jpg",
+    "./gallery2.jpg",
+    "./gallery3.jpg",
+    "./gallery4.jpg",
+    "./gallery5.jpg",
+    "./gallery6.jpg",
+    "./gallery7.jpg",
+    "./gallery8.jpg",
+    "./gallery9.jpg",
+    "./gallery10.jpg",
+    "./gallery11.jpg",
+    "./gallery12.jpg",
+    "./gallery13.jpg",
+    "./gallery14.jpg",
+  ];
 
   return (
     <div>
-      <h1 className="text-center pt-20 -mt-5 lg:pt-28 text-4xl lg:text-6xl tracking-[2px]  lg:tracking-[6px] pb-2 lg:pb-4">
+      <h1 className="text-center pt-20 -mt-5 lg:pt-28 text-4xl lg:text-6xl tracking-[2px] lg:tracking-[6px] pb-2 lg:pb-4">
         GALLERY
       </h1>
 
-      {isLoading ? (
-        <p>Loading...</p>
-      ) : (
-        <PhotoProvider>
-          <Swiper
-            className="tranding-slider"
-            effect="coverflow"
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView="auto"
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
-            }}
-            pagination={{ clickable: true }}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
-          >
-            {gallery &&
-              gallery.map((url, index) => (
-                <SwiperSlide key={index} className="tranding-slide">
-                  <PhotoView src={url}>
-                    <img src={url} alt={`Slide ${index}`} />
-                  </PhotoView>
-                </SwiperSlide>
-              ))}
-          </Swiper>
-        </PhotoProvider>
-      )}
+      <PhotoProvider>
+        <Swiper
+          className="tranding-slider"
+          effect="coverflow"
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView="auto"
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          pagination={{ clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+        >
+          {images.map((url, index) => (
+            <SwiperSlide key={index} className="tranding-slide">
+              <PhotoView src={url}>
+                <img src={url} alt={`Slide ${index}`} />
+              </PhotoView>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </PhotoProvider>
     </div>
   );
 };

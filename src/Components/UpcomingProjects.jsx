@@ -22,7 +22,6 @@ const UpcomingProjects = () => {
     const fetchProducts = async () => {
       const response = await fetch(`${BACKEND_URL}/Upcoming`);
       const data = await response.json();
-      // console.log(data, "=>>>");
       setLoading(false);
       setArray(data);
     };
