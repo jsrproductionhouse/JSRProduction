@@ -1,6 +1,6 @@
 import React from "react";
 //cloudinary images
-import desiKalakar from "../assets/desiKalakaar.jpg";
+import desiKalakar from "../assets/desiKalakar2.png";
 import deeper from "../assets/deeper.jpg";
 import mussorieBoyz from "../assets/mussoriie-boyz2.jpg";
 import chaal from "../assets/chhal2.jpg";
@@ -54,7 +54,7 @@ const Card = (data) => {
       <div className="flex flex-col bg-gray-50  ">
         <a href={data?.data?.link} target="_blank" rel="noreferrer">
           <img
-            className="w-60 h-64 md:w-60 md:h-72 xl:w-80 xl:h-[400px]"
+            className="w-60 h-64 md:w-60 md:h-72 xl:w-80 xl:h-full max-h-[400px] object-contain"
             src={result[data?.data?._id]}
             alt=""
           />
