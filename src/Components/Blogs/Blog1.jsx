@@ -33,7 +33,7 @@ const Blog1 = () => {
         "Founded in 2003; operational since 2015 with a 4.7/5 rating on Justdial (52 reviews).",
       rating: "4.7/5",
       img: "/winterline.png",
-      link: "https://www.winterlineproduction.com/",
+      link: "http://www.winterlineproduction.com/",
       why: "Ideal for filmmakers seeking reliable camera rentals backed by local expertise.",
     },
     {
