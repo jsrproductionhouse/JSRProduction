@@ -90,7 +90,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
       )}
 
       {/* desk nav */}
-      <div className="hidden md:flex md:flex-col px-[100px] pt-2 text-white">
+      <div className={`hidden md:flex md:flex-col px-[100px] pt-2 ${bar}`}>
         <div className="flex justify-between items-center">
           <div className="w-[100px] h-[50px] flex items-center lg:h-[80px] ">
             <Link to="/">

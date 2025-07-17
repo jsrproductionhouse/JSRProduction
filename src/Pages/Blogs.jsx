@@ -64,7 +64,7 @@ const Blogs = () => {
       </div>
 
       {/* Full Width Banner */}
-      <div className="relative w-full">
+      {/* <div className="relative w-full">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -88,7 +88,7 @@ const Blogs = () => {
           </SwiperSlide>
         </Swiper>
 
-        {/* Fallback image for smaller screens */}
+       
         <img
           src="Banner.jpg"
           alt="Mobile Banner"
@@ -98,10 +98,11 @@ const Blogs = () => {
         <h1 className="absolute top-1/2 left-1/2 text-white text-4xl lg:text-7xl font-bold transform -translate-x-1/2 -translate-y-1/2 tracking-widest z-10">
           BLOGS
         </h1>
-      </div>
+      </div> */}
 
       {/* Blog Cards */}
-      <div className="max-w-7xl mx-auto px-4 py-12 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-12 z-50 pt-20 lg:pt-32">
+        <div className="text-6xl font-bold my-5">Blogs</div>
         {blogs.map((blog, index) => (
           <div
             key={blog.id}

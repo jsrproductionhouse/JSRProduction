@@ -53,16 +53,16 @@ const SingleBlog = () => {
   return (
     <div className="font2">
       {/* Navbar */}
-      <div className="absolute z-20 top-0 left-0 w-full">
+      <div className="absolute z-50 top-0 left-0 w-full">
         <Navbar
           navBgColor={"bg-white"}
           absolute={" absolute "}
-          bar={"text-white"}
+          bar={"text-black"}
         />
       </div>
 
       {/* Banner Section */}
-      <div className="relative w-full">
+      {/* <div className="relative w-full">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -89,14 +89,15 @@ const SingleBlog = () => {
           alt="Mobile Banner"
           className="lg:hidden w-full h-[400px] object-cover"
         />
-
-        <h1 className="absolute top-1/2 left-1/2 text-white text-xl lg:text-5xl font-bold transform -translate-x-1/2 -translate-y-1/2 tracking-widest z-10">
-          {id.replace(/_/g, " ") || "Blog"}
-        </h1>
-      </div>
+      </div> */}
 
       {/* Blog Content */}
-      <div className=" mx-auto px-4 py-12">{renderBlogContent()}</div>
+      <div className=" mx-auto px-6 md:px-20 py-20 lg:py-32">
+        <h1 className="text-3xl lg:text-5xl font-bold z-10 md:px-20 px-6">
+          {id.replace(/_/g, " ") || "Blog"}
+        </h1>
+        {renderBlogContent()}
+      </div>
 
       <Footer />
     </div>
