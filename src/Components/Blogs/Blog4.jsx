@@ -1,10 +1,10 @@
 const Blog4 = () => {
   const rentalServices = [
     {
-      name: "JSR Production House: Cinematic Excellence in a Photo Studio for Portfolio Shoot",
+      name: "Studografia: Cinematic Excellence in a Photo Studio for Portfolio Shoot",
       location: "Dehradun",
       services:
-        "Film production (Mussoorie Boyz, 72 Hours: Martyr Who Never Died), video production (interiors, branding, 4K tours, drone shooting), equipment rental (professional-grade tools). Cinematic storytelling, artistic vision, technical precision, narrative-driven portfolio shooting.",
+        ":  Studografia provides a full spectrum of professional photography services tailored to meet diverse creative and commercial needs. With a focus on cinematic storytelling, artistic vision, and technical precision, we create visuals that truly resonate. Whether you're an individual seeking a narrative-driven portfolio or a brand aiming to elevate its visual identity, Studografia delivers high-quality, studio-grade photography that brings your vision to life.",
       experience:
         "JSR Studios, known as JSR Production House, is the best place to shoot a portfolio in Dehradun. With an extensive background in filmmaking, JSR Studios provides portfolio shots in a cinematic way, and while it may not be widely known for that, JSR Studios is able to craft stunning and professional portfolios using state-of-the-art equipment to tell visually stunning stories. JSR Studios is experienced in filmmaking and has amazing camera guys, plus the latest equipment on the market. JSR Studios is a great choice for any striking, professional, and unique portfolio photos.",
       rating: "4.7/5",
@@ -120,14 +120,26 @@ const Blog4 = () => {
   return (
     <div className="font-2 px-6 md:px-20 py-10 text-black">
       <p className="mb-6 text-xl md:text-2xl font-medium leading-relaxed">
-        The charming capital of Uttarakhand, Dehradun, is a creative and
-        talented city that is a great place to build a professional portfolio.
-        Selecting the ideal photo studio for portfolio shoot is essential to
-        capture your personality, whether you're a professional looking to
-        display your abilities or an aspiring model or actress. This article
-        examines the top six photo studios in Dehradun for portfolio shootings.
-        JSR Production House tops the list due to its outstanding proficiency in
-        filmmaking, which likely translates into cinematic-caliber photography.
+        The charming capital of Uttarakhand, Dehradun, isn’t just known for its
+        scenic charm, it's quickly becoming a hub for creative talent. Whether
+        you're an <strong>aspiring model, actor, influencer,</strong> or{" "}
+        <strong>a professional looking to elevate your personal brand</strong>,
+        a powerful portfolio is your first step to standing out. But capturing
+        your true essence of your personality requires more than just a camera,
+        it takes the right studio house with vision, skill, and the advance
+        equipment’s.
+        <br />
+        <br /> In this blog, we bring you the{" "}
+        <strong>Top 6 Photo Studios in Dehradun</strong>
+        that specialize in <strong>portfolio and ad shoots</strong>, each known
+        for their unique approach and creative excellence. Leading the list is
+        <strong> Studografia by JSR Production House </strong>, renowned for
+        blending cinematic filmmaking techniques with cutting-edge photography
+        to deliver visually stunning, narrative-rich portfolio shoots that set
+        you apart.
+        <br />
+        <br /> If you're ready to invest in your brand image, these studios are
+        where your transformation begins.
       </p>
 
       {rentalServices.map((service, index) => (
@@ -153,9 +165,74 @@ const Blog4 = () => {
               <p className="mb-2 text-lg font-medium">
                 <strong>Specialties:</strong> {service.services}
               </p>
-              <p className="mb-2 text-lg font-medium">
-                <strong>Why it stand out:</strong> {service.experience}
-              </p>
+              {index != 0 ? (
+                <p className="mb-2 text-lg font-medium">
+                  <strong>Why it stands out:</strong> {service.experience}
+                </p>
+              ) : (
+                <div className="mb-2 text-lg font-medium">
+                  <p className="mb-[-20px] mt-5">
+                    <strong>Why it stands out:</strong>
+                  </p>
+                  <p className="mt-4">
+                    <strong>
+                      Studografia (Venture of JSR Production House)
+                    </strong>{" "}
+                    is Dehradun’s leading studio house for high-impact visual
+                    storytelling. Here's what makes it the top choice for{" "}
+                    <strong>portfolio shoots, product photography</strong>, and{" "}
+                    <strong>ad film shoots</strong>:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-2 mt-2">
+                    <li>
+                      <strong>Cinematic Portfolio Shoots:</strong> Backed by a
+                      strong foundation of JSR Production House in filmmaking,
+                      Studografia crafts{" "}
+                      <strong>narrative-driven portfolios</strong> with
+                      cinematic flair. Each frame is directed with purpose,
+                      capturing your personality, style, and story in the most
+                      compelling way.Ideal for models, actors, and professionals
+                      who want more than just standard portraits.
+                    </li>
+                    <li>
+                      <strong>High-Precision Product Shoots:</strong> They help
+                      brands make a lasting first impression. Using
+                      <strong>
+                        state-of-the-art lighting setups and lenses
+                      </strong>
+                      , they create clean, detail-rich product images ideal for
+                      e-commerce, catalogs, and promotional materials.Whether
+                      it's fashion, food, or tech, your product looks its
+                      absolute best.
+                    </li>
+                    <li>
+                      <strong>Professional Ad Shoots:</strong> Studografia
+                      merges <strong> artistic direction</strong> with{" "}
+                      <strong>technical excellence</strong> to produce visuals
+                      for advertising. From concept to execution, our team
+                      delivers ad shoots that align with your brand’s identity
+                      and marketing goals—be it for digital, print, or TV..
+                    </li>
+                    <li>
+                      <strong>Cutting-Edge Equipment & Creative Team:</strong>{" "}
+                      With access to the latest cameras, lighting rigs, and
+                      cinematic tools, combined with a crew of{" "}
+                      <strong>experienced filmmakers and photographers</strong>,
+                      we ensure every shoot meets the highest industry
+                      standards.
+                    </li>
+                  </ul>
+                  <p className="mt-4">
+                    <strong>
+                      Studografia isn’t just a photo studio; it’s a visual
+                      storytelling house.
+                    </strong>{" "}
+                    Whether you're an individual or a brand, they help you stand
+                    out through professional, striking, and uniquely crafted
+                    visuals.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

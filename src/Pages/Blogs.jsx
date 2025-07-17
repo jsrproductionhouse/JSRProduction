@@ -43,7 +43,7 @@ const blogs = [
     id: 4,
     title: "Top 6 Best Photo Studios for Portfolio Shoot in Dehradun",
     description:
-      "The charming capital of Uttarakhand, Dehradun, is a creative and talented city that is a great place to build a professional portfolio. Selecting the ideal photo studio for portfolio shoot is essential to capture your personality, whether you're a professional looking to display your abilities or an aspiring model or actress. This article examines the top six photo studios in Dehradun for portfolio shootings. JSR Production House tops the list due to its outstanding proficiency in filmmaking, which likely translates into cinematic-caliber photography.",
+      "The charming capital of Uttarakhand, Dehradun, isn’t just known for its scenic charm, it's quickly becoming a hub for creative talent. Whether you're an aspiring model, actor, influencer, or a professional looking to elevate your personal brand, a powerful portfolio is your first step to standing out. But capturing your true essence of your personality requires more than just a camera, it takes the right studio house with vision, skill, and the advance equipment’s. In this blog, we bring you the Top 6 Photo Studios in Dehradun that specialize in portfolio and ad shoots, each known for their unique approach and creative excellence. Leading the list is Studografia by JSR Production House, renowned for blending cinematic filmmaking techniques with cutting-edge photography to deliver visually stunning, narrative-rich portfolio shoots that set you apart.If you're ready to invest in your brand image, these studios are where your transformation begins.",
     image: "/js2.png",
     link: "#",
   },
