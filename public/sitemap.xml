@@ -41,9 +41,5 @@
   <loc>https://www.jsrproductionhouse.com/blog/Top_6_Best_Photo_Studios_for_Portfolio_Shoot_in_Dehradun_(With_Expert_Tips)
   </loc>    
 </url>    
-<!-- Dynamic route -->    
-<url>        
-  <loc>https://www.jsrproductionhouse.com/blog/:id
-  </loc>    
-</url>
+
 </urlset>
