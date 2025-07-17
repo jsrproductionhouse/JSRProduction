@@ -120,7 +120,9 @@ const Blogs = () => {
                 {blog.description}
               </p>
               <div
-                onClick={() => navigate(`/blog/${blog.id}`)}
+                onClick={() =>
+                  navigate(`/blog/${blog.title.replace(/\s+/g, "_")}`)
+                }
                 className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer"
               >
                 Read Now

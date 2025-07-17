@@ -33,13 +33,13 @@ const SingleBlog = () => {
   // Function to render blog based on id
   const renderBlogContent = () => {
     switch (id) {
-      case "1":
+      case titles[0].replace(/\s+/g, "_"):
         return <Blog1 />;
-      case "2":
+      case titles[1].replace(/\s+/g, "_"):
         return <Blog2 />;
-      case "3":
+      case titles[2].replace(/\s+/g, "_"):
         return <Blog3 />;
-      case "4":
+      case titles[3].replace(/\s+/g, "_"):
         return <Blog4 />;
       default:
         return (
@@ -91,7 +91,7 @@ const SingleBlog = () => {
         />
 
         <h1 className="absolute top-1/2 left-1/2 text-white text-xl lg:text-5xl font-bold transform -translate-x-1/2 -translate-y-1/2 tracking-widest z-10">
-          {titles[id - 1] || "Blog"}
+          {id.replace(/_/g, " ") || "Blog"}
         </h1>
       </div>
 

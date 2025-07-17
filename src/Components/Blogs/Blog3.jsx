@@ -121,17 +121,19 @@ const Blog3 = () => {
             <strong>Location:</strong> {s.location}
           </p>
 
-          <p className="mb-2 text-lg font-medium">
-            <strong>Website:</strong>{" "}
-            <a
-              href={s.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 underline"
-            >
-              {s.website}
-            </a>
-          </p>
+          {s.id != 3 && (
+            <p className="mb-2 text-lg font-medium">
+              <strong>Website:</strong>{" "}
+              <a
+                href={s.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+              >
+                {s.website}
+              </a>
+            </p>
+          )}
 
           <p className="mb-2 text-lg font-medium">
             <strong>Notable Projects:</strong>
