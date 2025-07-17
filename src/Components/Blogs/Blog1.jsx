@@ -33,6 +33,7 @@ const Blog1 = () => {
         "Founded in 2003; operational since 2015 with a 4.7/5 rating on Justdial (52 reviews).",
       rating: "4.7/5",
       img: "/winterline.png",
+      link: "https://www.winterlineproduction.com/",
       why: "Ideal for filmmakers seeking reliable camera rentals backed by local expertise.",
     },
     {
@@ -44,6 +45,7 @@ const Blog1 = () => {
         "Operating since 2009, facilitating shoots across Uttarakhand.",
       rating: "N/A",
       img: "/trisha.png",
+      link: "https://www.trisnafilms.com/uttarakhand-film-video-production-services-dehradun-uttarakhand-india.html",
       why: "Known for specialized equipment and end-to-end production logistics.",
     },
     {
@@ -55,6 +57,7 @@ const Blog1 = () => {
         " With 25 years of service and a 4.5/5 rating on Justdial (295 reviews).",
       rating: "4.5/5",
       img: "/saya.png",
+      link: "https://sayafilms.com/",
       why: "Longstanding presence and accessibility for Dehradun filmmakers.",
     },
   ];
@@ -164,8 +167,11 @@ const Blog1 = () => {
           className="mb-12 border-b border-gray-300 pb-6 flex flex-col md:flex-row gap-6"
         >
           <div className="flex flex-col items-start gap-4">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">
-              {service.name}
+            <h3
+              className="text-2xl md:text-3xl font-bold mb-2 hover:text-blue-500 cursor-pointer"
+              onClick={() => window.open(service.link, "_blank")}
+            >
+              {index + 1} {service.name}
             </h3>
             <div className="w-full max-w-[70%] flex flex-col">
               <img

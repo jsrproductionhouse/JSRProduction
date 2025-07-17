@@ -2,6 +2,7 @@ const Blog2 = () => {
   const rentalServices = [
     {
       name: "JSR Production House and JSR Studios",
+      link: "https://jsrproductionhouse.com/",
       location: "Dehradun",
       services: "Training and mentorship in film and video production",
       experience:
@@ -12,6 +13,7 @@ const Blog2 = () => {
     },
     {
       name: "Doon Film School",
+      link: "https://doonfilmschool.com/",
       location: "Dehradun",
       services:
         " One- and two-year diploma programs in filmmaking, acting, and audio-visual arts",
@@ -23,6 +25,7 @@ const Blog2 = () => {
     },
     {
       name: "Fame Pathshala School of Cinema",
+      link: "https://famepathshala.com/",
       location: "Dehradun",
       services:
         "Courses in filmmaking, acting, modeling, entertainment, and photography",
@@ -146,6 +149,15 @@ const Blog2 = () => {
 
               <p className="text-lg font-medium">
                 <strong>Notable Attributes:</strong> {service.why}
+              </p>
+              <p className="text-lg font-medium">
+                <strong>Contact Us:</strong>{" "}
+                <div
+                  className="cursor-pointer text-blue-500"
+                  onClick={() => window.open(service.link, "_blank")}
+                >
+                  {service.name}
+                </div>
               </p>
             </div>
           </div>

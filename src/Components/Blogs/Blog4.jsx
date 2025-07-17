@@ -10,9 +10,11 @@ const Blog4 = () => {
       rating: "4.7/5",
       why: "A complete service provider with professional-grade gear, expert studios, and production coordination.",
       img: "/js2.png",
+      link: "https://jsrproductionhouse.com/",
     },
     {
       name: "Photo Klicker Photography: Veteran Storytellers",
+      link: "https://photoklickerphotography.com/",
       location: "Dehradun",
       services:
         "Wedding photography, pre-wedding shoots, portrait photography, fashion shoots.",
@@ -25,6 +27,7 @@ const Blog4 = () => {
     {
       name: "Dhyani Studio: Capturing Your Story",
       location: "Dehradun",
+      link: "https://www.justdial.com/Dehradun/Dhyani-Studios-Divya-Vihar/9999PX135-X135-230926003945-P2S8_BZDET/services",
       services:
         "Wedding photography, candid photography, professional photography.",
       experience:
@@ -41,6 +44,7 @@ const Blog4 = () => {
         "PANT offers customized packages and uses top-notch equipment. Their emphasis on both traditional and candid photography ensures a versatile portfolio of images. If you're looking for a photo studio for portfolio shoot with flexible packages and pricing, this is a reliable option.",
       rating: "N/A",
       img: "/pant.jpg",
+      link: "https://www.instagram.com/pant.professional.photo.studio/?hl=en",
       why: "Known for specialized equipment and end-to-end production logistics.",
     },
     {
@@ -51,6 +55,7 @@ const Blog4 = () => {
         "Studio Right Choice has a solid reputation for producing top-notch photography. They are a reliable choice for professional portfolio shoots and a dependable photo studio for portfolio shoot veterans and beginners alike.",
       rating: "4.5/5",
       img: "/choice.png",
+      link: "https://www.justdial.com/Dehradun/Studio-Right-Choice-Opp-Shiv-Mandir-Ballupur/9999PX135-X135-130612173040-C5U9_BZDET",
       why: "Longstanding presence and accessibility for Dehradun filmmakers.",
     },
     {
@@ -62,6 +67,7 @@ const Blog4 = () => {
         " Sublime Studios blends creative vision with contemporary methods. Their staff has been photographing 130 weddings since 2019 and is prepared to produce imaginative and expert portfolio images.",
       rating: "4.5/5",
       img: "/sublime.png",
+      link: "https://www.instagram.com/the_sublime_studios/",
       why: "Longstanding presence and accessibility for Dehradun filmmakers.",
     },
   ];
@@ -130,7 +136,10 @@ const Blog4 = () => {
           className="mb-12 border-b border-gray-300 pb-6 flex flex-col md:flex-row gap-6"
         >
           <div className="flex flex-col items-start gap-4">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">
+            <h3
+              className="text-2xl md:text-3xl font-bold mb-2"
+              onClick={() => window.open(service.link, "_blank")}
+            >
               {service.name}
             </h3>
             <div className="w-full max-w-[70%] flex flex-col">

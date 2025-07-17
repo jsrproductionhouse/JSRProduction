@@ -7,7 +7,7 @@ const Blog3 = () => {
       founders:
         "Tarun Rawat (Founder), associated with JSR Group, founded by Jaswant Singh Rawat",
       location: "Dehradun, Uttarakhand",
-      website: "https://www.jsrgroup.in",
+      website: "https://jsrproductionhouse.com/",
       projects: [
         "72 Hours: Martyr Who Never Died (2019)",
         "Mussoriie Boyz (upcoming)",
@@ -27,7 +27,7 @@ const Blog3 = () => {
       img: "/rcv.png", // Replace with correct image path
       founders: "Vinay Chanana (Director & Producer)",
       location: "Dehradun, Uttarakhand",
-      website: "https://rcvisiontechnics.com", // Replace with actual URL
+      website: "http://www.rcvisiontechnics.com/", // Replace with actual URL
       projects: [],
       desc: "RC Vision Technics has served Dehradun since 2000 and is a reliable veteran in the region’s filmmaking community. With over two decades of experience, it offers services like production planning, equipment rental, and consultation, making it a dependable partner for filmmakers in Uttarakhand.",
       table: {
@@ -42,7 +42,7 @@ const Blog3 = () => {
       img: "/plunex.png", // Replace with correct image path
       founders: "Not specified",
       location: "Dehradun, Uttarakhand",
-      website: "https://plunex.in",
+      website: "https://plunex.in/",
       projects: ["Commercial videos", "Short films", "Documentaries"],
       desc: "PLUNEX PRODUCTIONS is a modern production house known for its innovative storytelling and professional approach. Operating in Dehradun, it produces a wide range of content including ad films, music videos, and documentaries, and is well-regarded for its post-production services.",
       table: {
@@ -57,7 +57,7 @@ const Blog3 = () => {
       img: "/balaG.png", // Replace with correct image path
       founders: "Not specified",
       location: "Rishikesh, Uttarakhand",
-      website: "https://balagproduction.com", // Replace with actual URL
+      website: "https://www.instagram.com/balagproduction/?hl=en", // Replace with actual URL
       projects: [
         "Contributions to Bollywood films",
         "Web series",
@@ -76,7 +76,7 @@ const Blog3 = () => {
       img: "/VHS.png", // Replace with correct image path
       founders: "Jaswant Singh Rawat, Tarun Singh Rawat",
       location: "Dehradun, Uttarakhand",
-      website: "https://vhsmedia.com", // Replace with actual URL
+      website: "https://www.instagram.com/vhsmedia.llp/?hl=ne", // Replace with actual URL
       projects: ["Associated with Mussoriie Boyz"],
       desc: "VHS Media LLP, co-founded by Jaswant Singh Rawat and Tarun Singh Rawat, is an emerging player in Uttarakhand’s film production scene. Closely linked to JSR Production House, it is known for its collaborative film projects and continues to grow its footprint.",
       table: {
