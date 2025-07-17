@@ -68,7 +68,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
 
             <Link to="/blogs">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
-                Blogs
+                BLOGS
               </li>
             </Link>
 
@@ -128,7 +128,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               </Link>
               <Link to="/blogs">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
-                  Blogs
+                  BLOGS
                 </li>
               </Link>
               <Link
