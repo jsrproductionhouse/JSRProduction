@@ -66,11 +66,11 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               </li>
             </Link>
 
-            <Link to="/blogs">
+            {/* <Link to="/blogs">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
                 BLOGS
               </li>
-            </Link>
+            </Link> */}
 
             <Link to="/contact">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
@@ -126,11 +126,11 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                   RENTALS
                 </li>
               </Link>
-              <Link to="/blogs">
+              {/* <Link to="/blogs">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
                   BLOGS
                 </li>
-              </Link>
+              </Link> */}
               <Link
                 to="https://drive.google.com/file/d/1NHCBX1FzQvQftfnnkNjU_FWEXv4PCHs4/view"
                 target="_blank"

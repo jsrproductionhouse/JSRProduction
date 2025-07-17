@@ -74,8 +74,8 @@ const Blog4 = () => {
 
   const tableObj = [
     {
-      service: "JSR Production House",
-      location: "Film production, video production",
+      service: "Studografia by JSR Production House",
+      location: "Portfolio shoot, Product Photography and Ad Shoot",
       offering: "Cinematic expertise, known for feature films",
       experience: "Leading provider",
       rating: "4.7/5",
@@ -96,7 +96,7 @@ const Blog4 = () => {
     },
     {
       service: "PANT Photography",
-      location: "Wedding, pre-wedding, produc",
+      location: "Wedding, pre-wedding, product",
       offering: "Customizable packages, founded by Sandesh Pant",
       experience: "Since 2009",
       rating: "N/A",

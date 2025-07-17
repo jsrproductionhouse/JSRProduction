@@ -30,8 +30,8 @@ function App() {
         <Route path="/member" element={<Member />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/rentals" element={<Rentals />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blog/:id" element={<SingleBlog />} />
+        {/* <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<SingleBlog />} /> */}
       </Routes>
       {/* </AnimatePresence> */}
     </>
