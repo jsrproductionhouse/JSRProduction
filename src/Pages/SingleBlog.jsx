@@ -20,7 +20,7 @@ const titles = [
   "Top 5 Best Production Line Rental Services in Uttarakhand for Filmmakers & Creators",
   "Finding the Best Film School for Practical Experience in Uttarakhand: A Student’s Guide",
   "Top 5 Best Film Production Houses in Uttarakhand You Should Know About",
-  "Top 6 Best Photo Studios for Portfolio Shoot in Dehradun (With Expert Tips)",
+  "Top 6 Best Photo Studios for Portfolio Shoot in Dehradun",
 ];
 
 const SingleBlog = () => {
@@ -94,8 +94,12 @@ const SingleBlog = () => {
       {/* Blog Content */}
       <div className=" mx-auto px-6 md:px-20 py-20 lg:py-32">
         <h1 className="text-3xl lg:text-5xl font-bold z-10 md:px-20 px-6">
-          {id.replace(/_/g, " ") || "Blog"}
+          {titles.find((title) => title.replace(/\s+/g, "_") === id) || "Blog"}
+          {id === titles[3].replace(/\s+/g, "_") && (
+            <span> (With Expert Tips)</span>
+          )}
         </h1>
+
         {renderBlogContent()}
       </div>
 

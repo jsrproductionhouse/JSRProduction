@@ -41,8 +41,7 @@ const blogs = [
   },
   {
     id: 4,
-    title:
-      "Top 6 Best Photo Studios for Portfolio Shoot in Dehradun (With Expert Tips)",
+    title: "Top 6 Best Photo Studios for Portfolio Shoot in Dehradun",
     description:
       "The charming capital of Uttarakhand, Dehradun, is a creative and talented city that is a great place to build a professional portfolio. Selecting the ideal photo studio for portfolio shoot is essential to capture your personality, whether you're a professional looking to display your abilities or an aspiring model or actress. This article examines the top six photo studios in Dehradun for portfolio shootings. JSR Production House tops the list due to its outstanding proficiency in filmmaking, which likely translates into cinematic-caliber photography.",
     image: "/js2.png",
@@ -116,7 +115,9 @@ const Blogs = () => {
               className="w-full md:w-1/2 shadow-lg object-cover border-2 border-gray-400"
             />
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-semibold mb-4">{blog.title}</h2>
+              <h2 className="text-3xl font-semibold mb-4">
+                {blog.title} {blog.id == 4 && " (With Expert Tips)"}
+              </h2>
               <p className="text-gray-400 font-thin mb-4 text-lg font2">
                 {blog.description}
               </p>
