@@ -265,59 +265,93 @@ const Blog4 = () => {
       <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-4">
         Expert tips for successful portfolio shoots
       </h2>
+      <p className="text-lg my-2">
+        Want to make the most of your portfolio shoot? Here are some practical
+        tips to help you prepare like a pro:
+      </p>
       <ul className="list-disc list-inside space-y-2 text-lg md:text-xl font-medium">
         <li>
-          <span className="font-bold text-black">
-            Choose Versatile Outfits:
-          </span>{" "}
-          Reflect your style with a mix of casual, formal, and creative looks.
-        </li>
-        <li>
-          <span className="font-bold text-black">Select the Proper Site:</span>{" "}
-          Collaborate with your photographer to choose a suitable studio or
-          outdoor location.
+          <span className="font-bold text-black">Mix Up Your Wardrobe:</span>{" "}
+          Bring a variety of outfits—think casual, formal, and one standout
+          creative look. This gives your portfolio range and shows different
+          sides of your personality or brand.
         </li>
         <li>
           <span className="font-bold text-black">
-            Hire a professional photographer:
+            Co-Create with Your Team:
           </span>{" "}
-          Communicate your goals clearly.
+          Don’t just show up—
+          <strong>get involved in the creative process</strong>. Discuss shoot
+          themes, wardrobe styling, backgrounds, and posing ideas with your
+          photographer or creative director ahead of time. Collaboration leads
+          to more meaningful and cohesive shots
         </li>
         <li>
-          <span className="font-bold text-black">Practice Posing:</span> Work on
-          stances and facial expressions.
+          <span className="font-bold text-black">Pick the Right Studio:</span>{" "}
+          Choose a professional studio that aligns with your vision. Look for
+          one with a strong portfolio and high-end equipment. And most
+          importantly—clearly communicate your goals before the shoot.
+        </li>
+        <li>
+          <span className="font-bold text-black">Practice Your Poses:</span>{" "}
+          Spend some time in front of the mirror or take a few trial selfies to
+          test your angles and expressions. It helps you feel more confident and
+          natural during the shoot.
+        </li>
+        <li>
+          <span className="font-bold text-black">Use Props Wisely:</span> Props
+          can add context—but too many can distract.
+          <strong> Keep it clean and intentional.</strong>
         </li>
         <li>
           <span className="font-bold text-black">
-            Avoid Using Props Too Much:
+            Plan for the best light:{" "}
           </span>{" "}
-          Keep them to a minimum.
+          If you're shooting outdoors, aim for the{" "}
+          <strong>early morning or golden hour (late afternoon)</strong> for
+          soft, flattering natural light.
         </li>
         <li>
-          <span className="font-bold text-black">Time Outdoor Shoots: </span>{" "}
-          Morning or late afternoon offers the best light.
-        </li>
-        <li>
-          <span className="font-bold text-black"> Review and Edit:</span> Select
-          and professionally edit the best photos for a polished look.
+          <span className="font-bold text-black">Edit with purpose:</span>
+          After the shoot, work with your photographer to{" "}
+          <strong>select only the best shots</strong>. Professional retouching
+          can elevate your final portfolio without over-editing.
         </li>
       </ul>
+
+      <p className="text-lg my-2">
+        These tips will help ensure your portfolio isn't just good—it’s
+        unforgettable.
+      </p>
 
       <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-4">
         Why JSR Production House Leads the Pack
       </h2>
       <br />
       <p className="text-lg md:text-xl font-medium mb-4">
-        The creative division of JSR Production House, JSR Studios, leads
-        portfolio shooting in Dehradun through filmmaking expertise. They have
-        produced valuable films, such as Mussoorie Boyz and 72 Hours: The Martyr
-        Who Never Died. JSR Studios produces films and cinematic portfolio
-        shoots with equipment that creates visually compelling narratives and a
-        cinematic feel. Our visual storytelling approach emphasizes high-quality
-        videography and photography to create identity-based portfolios for
-        interior designers, architects, and branding professionals. If you want
-        a portfolio that distinguishes you from other portfolios and a depth of
-        storytelling in your portfolio, JSR Studios is your partner.
+        What sets <strong>Studografia</strong> apart is its deep-rooted
+        expertise in <strong>cinema and visual storytelling</strong>, born out
+        of <strong>JSR Studios</strong>, the acclaimed filmmaking division of{" "}
+        <strong>JSR Production House</strong>. With a rich portfolio that
+        includes films like Mussoorie Boyz and 72 Hours: The Martyr Who Never
+        Died, the team behind Studografia brings a level of cinematic depth and
+        production quality rarely seen in typical photo studios.
+        <br />
+        <br /> Being a venture of an established film production house means
+        <strong>Studografia has access to industry-grade tools</strong>—from
+        <strong> high-end cinema lenses</strong> to advanced{" "}
+        <strong>lighting setups</strong>, gimbals, and color grading tools. This
+        allows them to create{" "}
+        <strong>visually immersive, story-rich portfolio</strong>
+        shoots that go far beyond simple portraits.
+        <br />
+        <br /> Whether you're a model, actor, interior designer, architect, or
+        personal brand, Studografia specializes in crafting{" "}
+        <strong>identity-driven portfolios</strong> that feel like a scene from
+        a movie—stylized, polished, and unforgettable. If you’re looking for a
+        portfolio that <strong>commands attention</strong>, tells a story, and{" "}
+        <strong>elevates your image</strong>, Studografia is the gold standard
+        in Dehradun
       </p>
 
       <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-4">FAQs</h2>
@@ -332,16 +366,16 @@ const Blog4 = () => {
             What should I pack for the photo session for my portfolio?
           </strong>
           <br />
-          Bring clothes, accessories, grooming items, and any other needed
-          props.
+          Bring clothes, accessories, grooming items, and any other needed props
+          as per discussion with the creative team of the studio house.
         </li>
         <li>
           <strong>
             Is it possible to use outdoor spaces in Dehradun for my portfolio
             shoot?
           </strong>
-          <br /> Yes, many studios offer outdoor shoots. Locations like
-          Sahastradhara or Robber's Cave add visual appeal.
+          <br /> Yes, Studografia offer outdoor shoots. Locations like Crimson
+          Curry or JSR Inn in Kimadi provides visual appeal to the shoot
         </li>
       </ul>
     </div>
