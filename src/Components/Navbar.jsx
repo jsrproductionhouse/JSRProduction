@@ -42,7 +42,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
       {nav && (
         <div>
           <ul
-            className={`flex flex-col gap-4 text-lg px-10 py-6 tracking-widest ${navBgColor} ${absolute}  z-10 w-full`}
+            className={`flex flex-col gap-4 text-lg px-10 py-6 tracking-widest ${navBgColor} ${absolute} text-black z-10 w-full`}
           >
             <Link to="/">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
@@ -63,6 +63,12 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
             <Link to="/rentals">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
                 RENTALS
+              </li>
+            </Link>
+
+            <Link to="/blogs">
+              <li className="hover:scale-125 hover:opacity-50 duration-200">
+                Blogs
               </li>
             </Link>
 
@@ -118,6 +124,11 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               <Link to="/rentals">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
                   RENTALS
+                </li>
+              </Link>
+              <Link to="/blogs">
+                <li className="hover:scale-125 hover:opacity-50 duration-200">
+                  Blogs
                 </li>
               </Link>
               <Link
