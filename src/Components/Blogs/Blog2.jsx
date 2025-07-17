@@ -83,7 +83,7 @@ const Blog2 = () => {
       </p>
 
       <h2 className="text-3xl md:text-4xl font-bold mt-10 mb-4">
-        Criteria for Selecting Production Line Rental Services
+        Criteria for Selecting a Film School for Practical Experience
       </h2>
 
       <ul className="list-disc list-inside space-y-2 text-lg md:text-xl font-medium">
