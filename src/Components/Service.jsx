@@ -224,14 +224,17 @@ const Service = () => {
               className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
               data-aos="fade-up"
             >
-              {a[4]?.mainHeading}
+              {a[4]?.mainHeading?.split(/\s+/).join(" ")}
             </h1>
             <p className="font2 opacity-40 pb-4">{a[4]?.desc}</p>
             <ul className="font2 flex flex-col gap-2">
               <li>
                 <h1>{a[4]?.subHeading1}</h1>
               </li>
-              <li className="opacity-40">{a[4]?.desc1}</li>
+              <li className="opacity-40">
+                {a[4]?.desc1?.split(/\s+/).join(" ")}
+              </li>
+
               <li>
                 <h1>{a[4]?.subHeading2}</h1>
               </li>
