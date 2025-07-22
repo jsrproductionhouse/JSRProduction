@@ -65,6 +65,11 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                 RENTALS
               </li>
             </Link>
+            <Link to="/courses">
+              <li className="hover:scale-125 hover:opacity-50 duration-200">
+                COURSES
+              </li>
+            </Link>
 
             {/* <Link to="/blogs">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
@@ -124,6 +129,11 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               <Link to="/rentals">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
                   RENTALS
+                </li>
+              </Link>
+              <Link to="/courses">
+                <li className="hover:scale-125 hover:opacity-50 duration-200">
+                  COURSES
                 </li>
               </Link>
               {/* <Link to="/blogs">

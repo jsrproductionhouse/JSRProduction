@@ -1,0 +1,157 @@
+[
+  {
+    "category": "Crash Course",
+    "title": "VFX Crash Course",
+    "duration": "15 Days (Theory) + 1 Month (Practical)",
+    "fees": "₹1,00,000 + GST",
+    "batchSize": "3–5 students",
+    "highlights": [
+      "Hands-on experience with high-end Threadripper machines equipped with 30/40 series GPUs",
+      "Access licensed software: Adobe After Effects, Blender, Unreal Engine."
+    ],
+    "perks": [
+      "6-Month Competition: Win prize money of ₹50,000",
+      "Internship: Opportunity to work on our upcoming VFX movie",
+      "Certification: Industry-recognized VFX certification"
+    ],
+    "learning": [
+      "Introduction to VFX production pipelines",
+      "Basic compositing and 3D integration",
+      "Particle effects, lighting, and rendering",
+      "Industry best practices and workflow"
+    ]
+  },
+  {
+    "category": "Crash Course",
+    "title": "Editing Crash Course",
+    "duration": "1.5 Months",
+    "fees": "₹65,000 + GST",
+    "batchSize": "3–5 students",
+    "highlights": [
+      "Hands-on training with DaVinci Resolve, Adobe After Effects, and Premiere Pro",
+      "Work on dedicated, high-performance editing setups",
+      "Guest Lecture: Bunty Naagi (Bollywood film editor)",
+      "Certification: Professional Editing certification"
+    ],
+    "learning": [
+      "Fundamentals of non-linear editing (NLE)",
+      "Color correction and basic grading",
+      "Audio editing and mixing",
+      "Exporting for cinema, OTT, and social media"
+    ]
+  },
+  {
+    "category": "Crash Course",
+    "title": "DI and Colour Grading Course",
+    "duration": "2 Months",
+    "fees": "₹1,00,000 + GST",
+    "batchSize": "3–5 students",
+    "highlights": [
+      "Exclusive hands-on training with DaVinci Resolve",
+      "Dedicated setups for cinema and OTT color grading",
+      "Guest Lecture: Sandeep Bajpai (IMDB-listed Editor) 4-day masterclass",
+      "Certification: Professional DI & Colour Grading certification"
+    ],
+    "learning": [
+      "Color theory and artistic grading",
+      "HDR, Dolby Vision, and OTT mastering",
+      "Technical workflows for professional delivery",
+      "Scene-by-scene mood building and storytelling through color"
+    ]
+  },
+  {
+    "category": "Filmmaking",
+    "title": "Filmmaking Course",
+    "duration": "4 Months (3 Months Theory + 1 Month Practical)",
+    "fees": "₹2,00,000 + GST",
+    "batchSize": "6–12 students (2 hours/day)",
+    "curriculum": {
+      "Pre-Production": [
+        "Story, Script, Dialogue & Screenplay Writing",
+        "Reiki Implementation and Location Selection",
+        "Moodboard and Colour Palette Development"
+      ],
+      "Production": [
+        "Directing Techniques and Production Design",
+        "Costume Design and Production Control",
+        "Lighting Techniques and Production Management"
+      ]
+    },
+    "perks": [
+      "Team Selection: Opportunity to create a short film",
+      "Release & Promotion: Film premiere on our official platform",
+      "Certification: Professional Filmmaking certification"
+    ]
+  },
+  {
+    "category": "Advanced VFX",
+    "title": "VFX in Animation Program (Adobe Suite)",
+    "duration": "3 Months",
+    "fees": "₹2,00,000 + GST",
+    "batchSize": "3–5 students",
+    "software": ["Adobe", "After Effects", "SuperComp", "Photoshop"],
+    "learning": [
+      "Comprehensive VFX fundamentals",
+      "Layer-based compositing and integration",
+      "Professional-level effects and rendering"
+    ]
+  },
+  {
+    "category": "Advanced VFX",
+    "title": "VFX in Animation Program (Blender Suite)",
+    "duration": "3 Months",
+    "fees": "₹3,00,000 + GST",
+    "batchSize": "3–5 students",
+    "software": ["Blender", "After Effects", "SuperComp", "Substance Painter"],
+    "learning": [
+      "Detailed 3D modeling and texturing",
+      "Particle systems and advanced shading",
+      "Seamless integration into VFX pipelines"
+    ]
+  },
+  {
+    "category": "Advanced VFX",
+    "title": "VFX Film Making",
+    "duration": "5 Months",
+    "fees": "₹5,00,000 + GST",
+    "batchSize": "3–5 students",
+    "software": [
+      "Unreal Engine",
+      "Blender",
+      "After Effects",
+      "SuperComp",
+      "Nuke"
+    ],
+    "perks": ["Short film production opportunity"],
+    "learning": [
+      "End-to-end VFX production pipeline",
+      "Real-time rendering in Unreal Engine",
+      "High-level compositing and FX creation"
+    ]
+  },
+  {
+    "category": "Advanced VFX",
+    "title": "VFX Pro",
+    "duration": "8 Months",
+    "fees": "₹7,00,000 + GST",
+    "batchSize": "3–5 students",
+    "timings": "4 hours/day after 2 PM (4 working days/week)",
+    "software": [
+      "Unreal Engine",
+      "Blender",
+      "Embergen",
+      "Nuke",
+      "SuperComp",
+      "Houdini"
+    ],
+    "perks": [
+      "Short film production with release on our YouTube platform",
+      "Certification: Professional VFX certification"
+    ],
+    "learning": [
+      "Advanced world-building in Houdini",
+      "Real-time rendering and compositing",
+      "Integration of high-level VFX into production workflows"
+    ]
+  }
+]
