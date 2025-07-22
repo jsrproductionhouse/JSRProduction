@@ -17,8 +17,8 @@ const CourseCard = ({ course, enrollCall }) => {
   return (
     <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col md:flex-row w-full max-w-7xl lg:max-w-5xl mx-auto overflow-hidden">
       {/* Left: Image + Button */}
-      <div className="md:w-1/3 w-full flex flex-col items-center justify-between bg-gray-100">
-        <div className="w-full aspect-[4/3] md:aspect-auto md:h-full">
+      <div className="md:w-1/3 w-full hidden lg:flex flex-col items-center justify-between bg-gray-100">
+        <div className="w-full aspect-[4/3] md:aspect-auto lg:h-full">
           <img
             src={
               image ||
@@ -40,7 +40,7 @@ const CourseCard = ({ course, enrollCall }) => {
       </div>
 
       {/* Right: Info */}
-      <div className="p-6 md:w-2/3 w-full flex flex-col gap-4 text-gray-800 text-sm overflow-y-auto max-h-[600px]">
+      <div className="p-6 md:w-2/3 w-full flex flex-col gap-4 text-gray-800 text-sm">
         <h2 className="text-2xl font-bold">{title}</h2>
 
         <div className="space-y-1 font2">
@@ -113,7 +113,7 @@ const CourseCard = ({ course, enrollCall }) => {
         {software?.length > 0 && (
           <div className="font2">
             <p className="font-semibold">Software Covered:</p>
-            <ul className="flex gap-3 ml-5 opacity-80">
+            <ul className="flex flex-col lg:flex-row lg:gap-3 ml-5 opacity-80">
               {software.map((item, i) => (
                 <li className="flex gap-1 items-center" key={i}>
                   <span>●</span>
@@ -123,6 +123,15 @@ const CourseCard = ({ course, enrollCall }) => {
             </ul>
           </div>
         )}
+
+        <div className="flex lg:hidden w-full items-center justify-center">
+          <button
+            onClick={enrollCall}
+            className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition"
+          >
+            Enroll Now
+          </button>
+        </div>
       </div>
     </div>
   );
