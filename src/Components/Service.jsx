@@ -91,7 +91,7 @@ const Service = () => {
           />
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
-              className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
+              className=" text-2xl lg:text-5xl pt-5 lg:pb-5 text-start"
               data-aos="fade-up"
             >
               {a[0]?.mainHeading}
@@ -117,7 +117,7 @@ const Service = () => {
         <div className="flex flex-col-reverse justify-center items-center lg:flex-row  pb-10 lg:pb-40">
           <div className="px-0 lg:pr-4 lg:pl-5 lg:leading-7 pt-5 md:pt-8 lg:pt-16 leading-0 w-[320px] md:w-[600px] lg:w-[600px]">
             <h1
-              className=" text-2xl lg:text-5xl  pt-5 lg:pb-5"
+              className=" text-2xl lg:text-5xl  pt-5 lg:pb-5 text-start"
               data-aos="fade-up"
             >
               {a[1]?.mainHeading}
@@ -156,7 +156,7 @@ const Service = () => {
           />
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
-              className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
+              className=" text-2xl lg:text-5xl pt-5 lg:pb-5 text-start"
               data-aos="fade-up"
             >
               {a[2]?.mainHeading}
@@ -182,7 +182,7 @@ const Service = () => {
         <div className="flex flex-col-reverse justify-center items-center lg:flex-row  pb-10 lg:pb-40">
           <div className="px-0 lg:pr-4 lg:pl-5 lg:leading-7 pt-5 md:pt-8 lg:pt-16 leading-0 w-[320px] md:w-[600px] lg:w-[600px]">
             <h1
-              className=" text-2xl lg:text-5xl  pt-5 lg:pb-5 "
+              className=" text-2xl lg:text-5xl  pt-5 lg:pb-5 text-start"
               data-aos="fade-up"
             >
               {a[3]?.mainHeading}
@@ -221,7 +221,7 @@ const Service = () => {
           />
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
-              className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
+              className=" text-2xl lg:text-5xl pt-5 lg:pb-5 text-start"
               data-aos="fade-up"
             >
               {a[4]?.mainHeading?.split(/\s+/).join(" ")}
