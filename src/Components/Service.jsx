@@ -92,7 +92,7 @@ const Service = () => {
           <iframe
             width="650"
             height="420"
-            src="https://www.youtube.com/embed/AHCUpm8tfqw?autoplay=1&mute=1&loop=1&playlist=AHCUpm8tfqw&controls=0"
+            src="https://www.youtube.com/embed/AHCUpm8tfqw?autoplay=1&mute=1&loop=1&playlist=AHCUpm8tfqw&controls=0&rel=0"
             title="Pre Production"
             frameBorder="0"
             allow="autoplay; encrypted-media"
