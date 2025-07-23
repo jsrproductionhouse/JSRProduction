@@ -4,7 +4,6 @@ const CourseCard = ({ course, enrollCall }) => {
   const {
     title,
     duration,
-    fees,
     batchSize,
     highlights,
     perks,
@@ -49,11 +48,7 @@ const CourseCard = ({ course, enrollCall }) => {
               <span className="font-semibold">Duration:</span> {duration}
             </p>
           )}
-          {fees && (
-            <p>
-              <span className="font-semibold">Fees:</span> {fees}
-            </p>
-          )}
+
           {batchSize && (
             <p>
               <span className="font-semibold">Batch Size:</span> {batchSize}

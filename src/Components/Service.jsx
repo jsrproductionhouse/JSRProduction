@@ -186,15 +186,11 @@ const Service = () => {
             Your browser does not support the video tag.
           </video> */}
           <iframe
-            width="650"
-            height="420"
-            src="https://www.youtube.com/embed/n_vhTx75hdA?autoplay=1&mute=1&loop=1&playlist=n_vhTx75hdA&controls=0"
-            title="Post production"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            className="rounded-xl shadow-md"
-          />
+            src="https://drive.google.com/file/d/1mwdVtzsJYxTxLJ25iCc4tqjDfGAD9Inj/preview"
+            width="640"
+            height="480"
+            allow="autoplay"
+          ></iframe>
 
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
