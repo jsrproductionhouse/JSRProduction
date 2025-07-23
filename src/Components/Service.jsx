@@ -89,7 +89,7 @@ const Service = () => {
             alt=""
             className="w-[320px]  md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
           /> */}
-          <div className="relative w-full max-w-[90%] lg:max-w-[50%] aspect-video overflow-hidden">
+          <div className="relative w-full max-w-[93%] lg:max-w-[50%] aspect-video overflow-hidden">
             <iframe
               src="https://www.youtube.com/embed/AHCUpm8tfqw?autoplay=1&mute=1&loop=1&playlist=AHCUpm8tfqw&controls=0&rel=0"
               title="Pre Production"
@@ -192,7 +192,7 @@ const Service = () => {
             allow="autoplay"
           ></iframe> */}
 
-          <div className="relative w-full max-w-[90%] lg:max-w-[50%] aspect-video overflow-hidden">
+          <div className="relative w-full max-w-[93%] lg:max-w-[50%] aspect-video overflow-hidden">
             <iframe
               src="https://drive.google.com/file/d/1U9nHu5sv3MeLZ4N3k3d8F5jh1sSG2C69/preview"
               title="Post Production"
