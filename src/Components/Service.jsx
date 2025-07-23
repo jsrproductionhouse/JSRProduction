@@ -81,14 +81,39 @@ const Service = () => {
     <>
       <div className="bg-black p-5 text-justify md:p-12 px-6 pt-5 h-full w-[100%] text-white ">
         <div
-          className="flex flex-col items-center justify-center lg:flex-row pb-10 lg:pb-40"
+          className="flex flex-col items-center justify-center lg:flex-row pb-10 lg:pb-20"
           data-aos="fade-up"
         >
-          <img
+          {/* <img
             src={a[0]?.img}
             alt=""
             className="w-[320px]  md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
-          />
+          /> */}
+          <iframe
+            width="650"
+            height="420"
+            src="https://www.youtube.com/embed/AHCUpm8tfqw?autoplay=1&mute=1&loop=1&playlist=AHCUpm8tfqw"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+
+          {/* <video
+            autoPlay
+            muted
+            playsInline
+            loop
+            controls
+            className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] rounded-xl shadow-md"
+          >
+            <source
+              src="https://www.youtube.com/watch?v=AHCUpm8tfqw"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video> */}
+
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
               className=" text-2xl lg:text-5xl pt-5 lg:pb-5 text-start"
@@ -114,7 +139,7 @@ const Service = () => {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse justify-center items-center lg:flex-row  pb-10 lg:pb-40">
+        <div className="flex flex-col-reverse justify-center items-center lg:flex-row  pb-10 lg:pb-20">
           <div className="px-0 lg:pr-4 lg:pl-5 lg:leading-7 pt-5 md:pt-8 lg:pt-16 leading-0 w-[320px] md:w-[600px] lg:w-[600px]">
             <h1
               className=" text-2xl lg:text-5xl  pt-5 lg:pb-5 text-start"
@@ -147,13 +172,29 @@ const Service = () => {
         </div>
       </div>
       <div className="bg-black text-justify p-5 md:p-12 px-6 h-full w-[100%] text-white ">
-        <div className="flex flex-col justify-center items-center lg:flex-row pb-10 lg:pb-40">
-          <img
-            src={a[2]?.img}
-            alt=""
-            className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
-            data-aos="fade-up"
+        <div className="flex flex-col justify-center items-center lg:flex-row pb-10 lg:pb-20">
+          {/* <video
+            autoPlay
+            muted
+            playsInline
+            loop
+            controls
+            className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] rounded-xl shadow-md"
+          >
+            <source src="/postProduction.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video> */}
+          <iframe
+            width="650"
+            height="420"
+            src="https://www.youtube.com/embed/n_vhTx75hdA?autoplay=1&mute=1&loop=1&playlist=n_vhTx75hdA"
+            title="Post production"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="rounded-xl shadow-md"
           />
+
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
               className=" text-2xl lg:text-5xl pt-5 lg:pb-5 text-start"
@@ -179,7 +220,7 @@ const Service = () => {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse justify-center items-center lg:flex-row  pb-10 lg:pb-40">
+        <div className="flex flex-col-reverse justify-center items-center lg:flex-row  pb-10 lg:pb-20">
           <div className="px-0 lg:pr-4 lg:pl-5 lg:leading-7 pt-5 md:pt-8 lg:pt-16 leading-0 w-[320px] md:w-[600px] lg:w-[600px]">
             <h1
               className=" text-2xl lg:text-5xl  pt-5 lg:pb-5 text-start"
@@ -212,7 +253,7 @@ const Service = () => {
         </div>
       </div>
       <div className="bg-black text-justify p-5 md:p-12 px-6 h-full w-[100%] text-white ">
-        <div className="flex flex-col justify-center items-center lg:flex-row pb-10 lg:pb-40">
+        <div className="flex flex-col justify-center items-center lg:flex-row pb-10 lg:pb-20">
           <img
             src={a[4]?.img}
             alt=""

@@ -14,13 +14,6 @@ import courses from "../assets/courses.json";
 import CourseCard from "../Components/CourseCard";
 import EnrollNowForm from "../Components/EnrollNowForm";
 
-//animation
-import Aos from "aos";
-import "aos/dist/aos.css";
-Aos.init({
-  duration: 1200,
-});
-
 const Courses = () => {
   //filters
   const [activeFilter, setActiveFilter] = useState("All");
@@ -131,9 +124,9 @@ const Courses = () => {
         />
       </div>
 
-      <div className="bg-black text-white px-32 py-8 flex flex-col gap-20">
+      <div className="bg-black text-white px-12 lg:px-32 py-8 flex flex-col gap-20">
         {/* intro para */}
-        <div data-aos="fade-up" className="flex flex-col gap-5 items-center">
+        <div className="flex flex-col gap-5 items-center">
           <div className="font-semibold text-4xl">
             JSR Production House: Course Offerings & Programs
           </div>
@@ -150,7 +143,7 @@ const Courses = () => {
         </div>
 
         {/* why coose us */}
-        <div data-aos="fade-up" className="flex flex-col gap-5 items-center">
+        <div className="flex flex-col gap-5 items-center">
           <div className="font-semibold text-4xl">
             Why Choose JSR Production House?
           </div>
@@ -200,7 +193,7 @@ const Courses = () => {
         </div>
 
         {/* Filters Section */}
-        <div data-aos="fade-up" className="w-full flex justify-center">
+        <div className="w-full flex justify-center">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {filters.map((filter) => (
               <button
@@ -220,7 +213,7 @@ const Courses = () => {
         </div>
 
         {/* courses cards */}
-        <div data-aos="fade-up" className="grid gap-10 md:grid-cols-1">
+        <div className="grid gap-10 md:grid-cols-1">
           {filteredCourses.map((course, index) => (
             <CourseCard
               enrollCall={() => {
@@ -237,11 +230,11 @@ const Courses = () => {
         </div>
 
         {/* Additional Perks for All Courses */}
-        <div data-aos="fade-up" className="flex flex-col gap-5 items-center">
+        <div className="flex flex-col gap-5 items-center">
           <div className="font-semibold text-4xl text-center">
             Additional Perks for All Courses
           </div>
-          <ul className="font2 text-lg w-full list-disc pl-6 space-y-3">
+          <ul className="font2 text-lg w-full list-disc pl-6">
             <li>
               <span className="font-semibold">Personalized mentorship:</span>{" "}
               <span className="opacity-40">From industry professionals</span>
