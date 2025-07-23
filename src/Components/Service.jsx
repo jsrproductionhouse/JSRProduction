@@ -92,11 +92,12 @@ const Service = () => {
           <iframe
             width="650"
             height="420"
-            src="https://www.youtube.com/embed/AHCUpm8tfqw?autoplay=1&mute=1&loop=1&playlist=AHCUpm8tfqw"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/AHCUpm8tfqw?autoplay=1&mute=1&loop=1&playlist=AHCUpm8tfqw&controls=0"
+            title="Pre Production"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
+            className="rounded-xl shadow-md"
           ></iframe>
 
           {/* <video
@@ -187,7 +188,7 @@ const Service = () => {
           <iframe
             width="650"
             height="420"
-            src="https://www.youtube.com/embed/n_vhTx75hdA?autoplay=1&mute=1&loop=1&playlist=n_vhTx75hdA"
+            src="https://www.youtube.com/embed/n_vhTx75hdA?autoplay=1&mute=1&loop=1&playlist=n_vhTx75hdA&controls=0"
             title="Post production"
             frameBorder="0"
             allow="autoplay; encrypted-media"
