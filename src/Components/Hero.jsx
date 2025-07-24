@@ -3,25 +3,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedVideo } from "@cloudinary/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { useOrientation } from "react-use";
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkOrientation = () => {
-      const isMobile = window.innerWidth <= 768;
-      const isPortrait = window.innerHeight > window.innerWidth;
-      setIsMobile(isMobile && isPortrait);
-    };
+  const orientation = useOrientation();
 
-    checkOrientation(); // initial check
-    window.addEventListener("resize", checkOrientation);
-    window.addEventListener("orientationchange", checkOrientation);
-    return () => {
-      window.removeEventListener("resize", checkOrientation);
-      window.removeEventListener("orientationchange", checkOrientation);
-    };
-  }, []);
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    const isPortrait = orientation?.type?.includes("portrait");
+    setIsMobile(isMobile && isPortrait);
+  }, [orientation]);
 
   const cld = new Cloudinary({ cloud: { cloudName: "dsea9eyps" } });
 
