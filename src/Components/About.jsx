@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div className="flex flex-col  justify-center pt-10 lg:pt-2 -mt-12 sm:mt-2 md:-mt-4 lg:-mt-36 xl:-mt-24 relative z-40  ">
       <div className="text-center flex flex-col items-center text-gray-600 leading-7">
-        <h1 className="text-4xl tracking-wide lg:tracking-widest lg:text-7xl pb-4 pt-5 lg:pt-16 xl:pt-20 2xl:pt-24 text-black">
+        <h1 className="text-4xl tracking-wide lg:tracking-widest lg:text-7xl pb-4 lg:pb-0 pt-5 lg:pt-32 text-black">
           ABOUT JSR Production House
         </h1>
 
