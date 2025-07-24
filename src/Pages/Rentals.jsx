@@ -148,7 +148,7 @@ const Rentals = () => {
 
         <div>
           <img
-            src="Banner.jpg"
+            src="Banner2.jpg"
             className="h-[400px] lg:h-[500px] w-full object-cover"
           />{" "}
         </div>
