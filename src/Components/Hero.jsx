@@ -39,7 +39,7 @@ const Hero = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="w-screen h-[calc(100vh-80px)]" // Ensure Swiper fills screen
+        className="w-screen h-[40vh]" // Ensure Swiper fills screen
       >
         <SwiperSlide className="w-full h-full">
           <div className="relative w-full h-full">
@@ -50,7 +50,7 @@ const Hero = () => {
               loop
               playsInline
               controls={false}
-              className="absolute top-0 left-0 w-full h-full object-cover"
+              className="absolute top-0 left-0 w-full h-full object-fit"
             />
           </div>
         </SwiperSlide>
