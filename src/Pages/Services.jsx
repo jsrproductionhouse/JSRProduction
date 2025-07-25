@@ -115,7 +115,7 @@ const Services = () => {
           <SwiperSlide>
             <div className="flex  justify-center w-full">
               <img
-                src="Banner3.jpg"
+                src="Banner2.jpg"
                 // src={banner}
                 // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
                 alt=""
@@ -125,7 +125,7 @@ const Services = () => {
           </SwiperSlide>
         </Swiper>
         <img
-          src="Banner3.jpg"
+          src="Banner2.jpg"
           alt=""
           className="lg:hidden h-[400px] lg:h-[500px] w-full object-cover"
         />
