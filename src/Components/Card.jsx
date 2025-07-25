@@ -1,5 +1,6 @@
 import React from "react";
-//cloudinary images
+
+// Cloudinary images
 import desiKalakar from "../assets/desiKalakar2.png";
 import deeper from "../assets/deeper.jpg";
 import mussorieBoyz from "../assets/mussoriie-boyz2.jpg";
@@ -21,11 +22,9 @@ import mero from "../assets/mero-dil-aaygyi.jpg";
 import kuyedi from "../assets/kuyedi.jpg";
 import tuna from "../assets/tu-na-sahi.jpg";
 import shiv from "../assets/main-hi-shiv-hu.jpg";
-const Card = (data) => {
-  // const { title, img, release_date, producer, director, DOP } = data;
-  // console.log("dataaaa", data);
 
-  const result = {
+const Card = ({ data }) => {
+  const images = {
     "67596164ca660da510294c5a": desiKalakar,
     "67596202ca660da510294c64": mussorieBoyz,
     "6759625fca660da510294c6f": chaal,
@@ -50,56 +49,54 @@ const Card = (data) => {
   };
 
   return (
-    <>
-      <div className="flex flex-col bg-gray-50  ">
-        <a href={data?.data?.link} target="_blank" rel="noreferrer">
-          <img
-            className="w-60 h-64 md:w-60 md:h-72 xl:w-80 xl:h-full max-h-[400px] object-contain"
-            src={result[data?.data?._id]}
-            alt=""
-          />
-        </a>
-        {/* <div></div> */}
-        <p className="font2 pt-2 pb-4 md:ps-6  lg:pt-2  self-center flex flex-col gap-2  ">
-          <li className="font-bold text-lg  ">{data?.data?.title}</li>
-          <div className="flex  flex-col pt-2 text-base  justify-start items-start text-left   h-24 ">
-            {data?.data?.producer !== "" && data?.data?.producer !== " " && (
-              <li className="">
-                <span className="font-semibold">Producer : </span>
-                {data?.data?.producer}
-              </li>
-            )}
+    <div className="flex flex-col items-center bg-gray-50 p-4 rounded-xl w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] xl:max-w-[420px] mx-auto ">
+      <a href={data?.link} target="_blank" rel="noreferrer">
+        <img
+          src={images[data?._id]}
+          alt={data?.title || "poster"}
+          className="w-full h-64 md:h-72 xl:h-80 object-contain rounded-lg"
+        />
+      </a>
 
-            {data?.data?.director && (
-              <li className=" ">
-                <span className="font-semibold">Director: </span>
-                {data.data.director}
-              </li>
-            )}
-            {data?.data?.singer && (
-              <li className=" ">
-                <span className="font-semibold">Singer: </span>
-                {data.data.singer}
-              </li>
-            )}
-            {data?.data?.musicproducer && (
-              <li className=" ">
-                <span className="font-semibold">Music Producer: </span>
-                {data.data.musicproducer}
-              </li>
-            )}
+      <div className="w-full text-left mt-4 font2 space-y-2 text-sm sm:text-base">
+        {data?.title && (
+          <p className="font-bold text-lg text-center break-words">
+            {data.title}
+          </p>
+        )}
 
-            {data?.data?.dop ? (
-              <li className="  ">
-                {" "}
-                <span className="font-semibold ">DOP : </span>
-                {data?.data?.dop}
-              </li>
-            ) : null}
-          </div>
-        </p>
+        {data?.producer?.trim() && (
+          <p>
+            <span className="font-semibold">Producer:</span> {data.producer}
+          </p>
+        )}
+
+        {data?.director && (
+          <p>
+            <span className="font-semibold">Director:</span> {data.director}
+          </p>
+        )}
+
+        {data?.singer && (
+          <p>
+            <span className="font-semibold">Singer:</span> {data.singer}
+          </p>
+        )}
+
+        {data?.musicproducer && (
+          <p>
+            <span className="font-semibold">Music Producer:</span>{" "}
+            {data.musicproducer}
+          </p>
+        )}
+
+        {data?.dop && (
+          <p>
+            <span className="font-semibold">DOP:</span> {data.dop}
+          </p>
+        )}
       </div>
-    </>
+    </div>
   );
 };
 
