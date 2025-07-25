@@ -51,7 +51,7 @@ const Home = () => {
         />
       </Helmet>
 
-      <div className="fixed bottom-[0.2rem] right-0 h-72 w-10 flex flex-col items-center gap-6 justify-end bg-gray-200 opacity-80 z-50 rounded-tl-md rounded-bl-md py-4">
+      <div className="fixed bottom-[0.2rem] right-0 w-10 flex flex-col items-center gap-6 justify-end bg-gray-200 opacity-80 z-50 rounded-tl-md rounded-bl-md py-4">
         <a
           href="https://www.facebook.com/JSRProductionhouse"
           target="_blank"
