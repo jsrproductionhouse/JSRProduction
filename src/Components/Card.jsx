@@ -1,7 +1,7 @@
 import React from "react";
 
 // Cloudinary images
-import desiKalakar from "../assets/desiKalakar2.png";
+import desiKalakar from "../assets/desiKalakar.jpg";
 import deeper from "../assets/deeper.jpg";
 import mussorieBoyz from "../assets/mussoriie-boyz2.jpg";
 import chaal from "../assets/chhal2.jpg";
