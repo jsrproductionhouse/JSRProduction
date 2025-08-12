@@ -65,11 +65,14 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                 RENTALS
               </li>
             </Link>
-            <Link to="/courses">
+            <div
+              className="cursor-pointer"
+              onClick={() => window.open("https://jsrftc.com/", "_self")}
+            >
               <li className="hover:scale-125 hover:opacity-50 duration-200">
-                COURSES
+                ACADEMICS
               </li>
-            </Link>
+            </div>
 
             {/* <Link to="/blogs">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
@@ -131,11 +134,16 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                   RENTALS
                 </li>
               </Link>
-              <Link to="/courses">
+              <div
+                className="cursor-pointer"
+                onClick={() => {
+                  window.open("https://jsrftc.com/", "_self");
+                }}
+              >
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
-                  COURSES
+                  ACADEMICS
                 </li>
-              </Link>
+              </div>
               {/* <Link to="/blogs">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
                   BLOGS

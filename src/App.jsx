@@ -8,9 +8,9 @@ import Rentals from "./Pages/Rentals";
 import Member from "./Pages/Member";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
-import Blogs from "./Pages/Blogs";
-import SingleBlog from "./Pages/SingleBlog";
-import Courses from "./Pages/Courses";
+// import Blogs from "./Pages/Blogs";
+// import SingleBlog from "./Pages/SingleBlog";
+// import Courses from "./Pages/Courses";
 // import { AnimatePresence } from "framer-motion/dist/framer-motion";
 ReactGA.initialize("G-QJMTS5LSV3");
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <Route path="/member" element={<Member />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/rentals" element={<Rentals />} />
-        <Route path="/courses" element={<Courses />} />
+        {/* <Route path="/courses" element={<Courses />} /> */}
         {/* <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog/:id" element={<SingleBlog />} /> */}
       </Routes>
