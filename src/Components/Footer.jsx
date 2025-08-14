@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black flex flex-row justify-between items-center px-5 lg:px-28 py-6 flex-wrap gap-4">
+    <div className="w-full bg-black flex flex-row gap-32 items-center px-5 lg:px-28 py-6 flex-wrap">
       {/* Text */}
-      <p className="text-white text-xl sm:text-2xl lg:text-4xl tracking-[2px] flex-1 min-w-[200px]">
+      <p className="text-white text-xl sm:text-2xl lg:text-4xl tracking-[2px] min-w-[200px]">
         SEEKING A CAREER IN VIDEO PRODUCTION? SEND US YOUR CV!
       </p>
 
