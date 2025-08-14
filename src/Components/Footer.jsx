@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" w-full h-72 lg:h-44 px-5  bg-black flex flex-col lg:flex-row justify-around items-start lg:items-center">
-      <p className="text-white text-4xl lg:text-4xl lg:max-w-[800px] tracking-[2px] flex items-center w-full px-10">
+    <div className="w-full bg-black flex flex-row justify-between items-center px-5 lg:px-28 py-6 flex-wrap gap-4">
+      {/* Text */}
+      <p className="text-white text-xl sm:text-2xl lg:text-4xl tracking-[2px] flex-1 min-w-[200px]">
         SEEKING A CAREER IN VIDEO PRODUCTION? SEND US YOUR CV!
       </p>
 
-      <Link to="/contact" className="w-full flex items-center">
-        <button className="bg-white w-full px-20 lg:px-0 lg:w-[200px] h-14 tracking-[6px] flex items-center justify-center text-center text-black text-lg">
+      {/* Button */}
+      <Link to="/contact">
+        <button className="bg-white px-6 sm:px-10 h-14 tracking-[3px] text-black text-base sm:text-lg">
           Learn More!
         </button>
       </Link>
