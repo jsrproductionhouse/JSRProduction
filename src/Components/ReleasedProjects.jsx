@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 import SkeletonCard from "./SkeletonCard";
 import { BACKEND_URL } from "../../config";
+import Loader from "./Loader";
 
 const ReleasedProjects = () => {
   const [array, setArray] = useState([]);
@@ -159,54 +160,58 @@ const ReleasedProjects = () => {
         {/* <div className="md:flex hidden justify-center gap-5 pt-20 flex-wrap"></div> */}
       </div>
 
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          "@0.75": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper p-2"
-      >
-        {
-          // loading
-          //   ? [1, 2, 3, 4].map((index) => (
-          //       <SwiperSlide key={index}>
-          //         <SkeletonCard />
-          //       </SwiperSlide>
-          //     ))
-          //   :
-          array.map((item, index) => {
-            return (
-              <SwiperSlide key={index} className="">
-                <Card data={item} />
-              </SwiperSlide>
-            );
-          })
-        }
-      </Swiper>
+      {loading ? (
+        <Loader text="Loading projects..." />
+      ) : (
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            "@1.50": {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper p-2"
+        >
+          {
+            // loading
+            //   ? [1, 2, 3, 4].map((index) => (
+            //       <SwiperSlide key={index}>
+            //         <SkeletonCard />
+            //       </SwiperSlide>
+            //     ))
+            //   :
+            array.map((item, index) => {
+              return (
+                <SwiperSlide key={index} className="">
+                  <Card data={item} />
+                </SwiperSlide>
+              );
+            })
+          }
+        </Swiper>
+      )}
       {/* <>
         {array.map((item, index) => {
           return <Card key={index} data={item} />;
